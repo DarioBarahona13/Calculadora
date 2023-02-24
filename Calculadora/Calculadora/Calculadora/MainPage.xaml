@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+             
+   
+    
+    <StackLayout>
+        <Label Text="First Number:" />
+        <Entry Text="{Binding FirstNumber}" />
+        <Label Text="Second Number:" />
+        <Entry Text="{Binding SecondNumber}" />
+        <Label Text="Result:" />
+        <Label Text="{Binding Result}" />
+
+        <Button Text="+" Command="{Binding AddCommand}" />
+        <Button Text="-" Command="{Binding SubtractCommand}" />
+        <Button Text="*" Command="{Binding MultiplyCommand}" />
+        <Button Text="/" Command="{Binding DivideCommand}" />
+
+        <Button Text="Clear" Command="{Binding ClearCommand}" />
+    </StackLayout>
+
+</ContentPage>
